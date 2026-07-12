@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App - Test Your Knowledge</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="sky"></div>
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star star-small"></div>
+      <div class="star star-small"></div>
+      <div class="star star-small"></div>
+    </div>
+    <div class="moon"></div>
+  </div>
+
+  <div class="app-shell">
+    <section id="welcomeScreen" class="screen active">
+      <div class="card welcome-card">
+        <h1 class="main-title">Quiz App</h1>
+        <p class="subtitle">Test Your Knowledge Across Multiple Domains</p>
+        <p class="description">
+          Challenge yourself with our comprehensive quiz covering 5 different categories. 
+          Each category has 10 carefully selected questions designed for college students.
+        </p>
+        
+        <div class="categories-section">
+          <h2 class="section-title">Choose a Category</h2>
+          <div class="categories-grid">
+            <a class="category-card" href="maths.html">
+              <div class="category-icon">📐</div>
+              <h3>Mathematics</h3>
+              <p>10 Questions</p>
+            </a>
+            <a class="category-card" href="web.html">
+              <div class="category-icon">🌐</div>
+              <h3>Web Development</h3>
+              <p>10 Questions</p>
+            </a>
+            <a class="category-card" href="java.html">
+              <div class="category-icon">☕</div>
+              <h3>Java Programming</h3>
+              <p>10 Questions</p>
+            </a>
+            <a class="category-card" href="general.html?category=general">
+              <div class="category-icon">🧠</div>
+              <h3>General Knowledge</h3>
+              <p>10 Questions</p>
+            </a>
+            <a class="category-card" href="general.html?category=computer">
+              <div class="category-icon">💻</div>
+              <h3>Computer Fundamentals</h3>
+              <p>10 Questions</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

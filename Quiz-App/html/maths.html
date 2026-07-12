@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics Quiz | Quiz App</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="sky"></div>
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star star-small"></div>
+      <div class="star star-small"></div>
+      <div class="star star-small"></div>
+    </div>
+    <div class="moon"></div>
+  </div>
+
+  <div class="app-shell">
+    <section id="quizScreen" class="screen active">
+      <div class="card quiz-card">
+        <div class="quiz-header">
+          <div>
+            <p class="eyebrow" id="categoryLabel">Mathematics</p>
+            <h2 id="questionCounter">Question 1 of 10</h2>
+          </div>
+          <div class="quiz-meta">
+            <div class="timer-pill" id="timer">10s</div>
+            <button id="exitBtn" class="secondary-btn exit-btn" type="button">Exit</button>
+          </div>
+        </div>
+
+        <div class="progress-wrap" aria-label="Progress bar">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div class="question-box">
+          <p id="questionText" class="question-text"></p>
+        </div>
+
+        <div id="optionsContainer" class="options-grid"></div>
+
+        <div class="actions">
+          <button id="nextBtn" class="primary-btn" disabled>Next Question</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="card result-card">
+        <p class="eyebrow">Quiz Complete</p>
+        <h2>Your Result</h2>
+        <div class="score-circle" id="scoreCircle">0%</div>
+        <p id="performanceMessage" class="performance-message"></p>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span>Total Questions</span>
+            <strong id="totalQuestions">0</strong>
+          </div>
+          <div class="stat-box">
+            <span>Correct Answers</span>
+            <strong id="correctAnswers">0</strong>
+          </div>
+          <div class="stat-box">
+            <span>Wrong Answers</span>
+            <strong id="wrongAnswers">0</strong>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button id="retakeBtn" class="primary-btn">Retake Quiz</button>
+          <a class="secondary-btn" id="homeBtn" href="index.html">Return to Home</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
